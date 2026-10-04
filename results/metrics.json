@@ -1,0 +1,128 @@
+[
+  {
+    "key": "l1",
+    "指标 / Metric": "整系统L1通过率 / Overall L1 pass rate",
+    "分子 / Numerator": 20,
+    "分母 / Denominator": 20,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": null,
+    "说明 / Description": "运行、预期与回答合同；不判断事实支持 / Execution, expectations, response contract; no factual entailment check"
+  },
+  {
+    "key": "three_class_accuracy",
+    "指标 / Metric": "三类准确率 / Three-category accuracy",
+    "分子 / Numerator": 16,
+    "分母 / Denominator": 16,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": 0.867,
+    "说明 / Description": "规则与GPT；排除unclear及无标签题 / Rules plus GPT; excludes unclear and unlabelled cases, distinct from Part 1"
+  },
+  {
+    "key": "majority_baseline",
+    "指标 / Metric": "多数类基线 / Majority-class baseline",
+    "分子 / Numerator": 9,
+    "分母 / Denominator": 16,
+    "实测值 / Measured value": 0.5625,
+    "目标值 / Target": null,
+    "说明 / Description": "{'routine_care': 9, 'behaviour': 3, 'health_concern': 4}"
+  },
+  {
+    "key": "route_accuracy",
+    "指标 / Metric": "路径准确率 / Action accuracy",
+    "分子 / Numerator": 18,
+    "分母 / Denominator": 18,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": null,
+    "说明 / Description": "区分各处理路径 / Distinguishes appointment, urgent contact, care and clarification"
+  },
+  {
+    "key": "red_flag_recall",
+    "指标 / Metric": "危险案例召回率 / Urgent-case recall",
+    "分子 / Numerator": 3,
+    "分母 / Denominator": 3,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": 1.0,
+    "说明 / Description": "只代表本批风险题 / Applies only to fixed urgent cases in this batch"
+  },
+  {
+    "key": "urgent_false_referral",
+    "指标 / Metric": "紧急误转介率 / Urgent false-referral rate",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 15,
+    "实测值 / Measured value": 0.0,
+    "目标值 / Target": null,
+    "说明 / Description": "失败单独报告 / Failures reported separately, not counted as correct"
+  },
+  {
+    "key": "any_false_referral",
+    "指标 / Metric": "任何兽医误转介率 / Any-vet false-referral rate",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 14,
+    "实测值 / Measured value": 0.0,
+    "目标值 / Target": null,
+    "说明 / Description": "排除应预约题 / Excludes cases correctly requiring appointments"
+  },
+  {
+    "key": "details_accuracy",
+    "指标 / Metric": "追问路径准确率 / Clarification action accuracy",
+    "分子 / Numerator": 2,
+    "分母 / Denominator": 2,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": null,
+    "说明 / Description": "追问有用性由L2判断 / L2 assesses usefulness of follow-up questions"
+  },
+  {
+    "key": "gold_all_retrieved",
+    "指标 / Metric": "全部gold检索率 / All-gold retrieval rate",
+    "分子 / Numerator": 5,
+    "分母 / Denominator": 5,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": 0.8,
+    "说明 / Description": "5条gold题，须找到全部来源 / Five gold questions; all sources required"
+  },
+  {
+    "key": "gold_document_coverage",
+    "指标 / Metric": "gold来源覆盖率 / Gold-document coverage",
+    "分子 / Numerator": 6,
+    "分母 / Denominator": 6,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": null,
+    "说明 / Description": "按来源编号计数 / Counts source IDs, including partial multi-source coverage"
+  },
+  {
+    "key": "gold_all_cited",
+    "指标 / Metric": "全部gold引用率 / All-gold citation rate",
+    "分子 / Numerator": 5,
+    "分母 / Denominator": 5,
+    "实测值 / Measured value": 1.0,
+    "目标值 / Target": null,
+    "说明 / Description": "仅检查编号 / IDs alone do not establish factual correctness"
+  },
+  {
+    "key": "failure_rate",
+    "指标 / Metric": "运行失败率 / Execution failure rate",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 20,
+    "实测值 / Measured value": 0.0,
+    "目标值 / Target": null,
+    "说明 / Description": "API、分流或回答错误；拒答不是运行失败 / API, routing or answering errors; abstention alone is not execution failure"
+  },
+  {
+    "key": "l2_review_completion",
+    "指标 / Metric": "L2复核完成率 / L2 review completion",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 20,
+    "实测值 / Measured value": 0.0,
+    "目标值 / Target": null,
+    "说明 / Description": "本批布尔评分与非空理由 / Boolean judgment and nonempty justification for the matching batch"
+  },
+  {
+    "key": "l2_reviewed_pass",
+    "指标 / Metric": "L2已复核通过率 / L2 pass rate among reviewed cases",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 0,
+    "实测值 / Measured value": null,
+    "目标值 / Target": null,
+    "说明 / Description": "只统计已复核题 / Reviewed cases only until review is complete"
+  }
+]

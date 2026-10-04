@@ -1,0 +1,92 @@
+{
+  "feeding": {
+    "publisher": "Cats Protection",
+    "source_title": "Feeding Your Cat",
+    "url": "https://www.cats.org.uk/help-and-advice/diet/feeding",
+    "updated_date": null
+  },
+  "drinking": {
+    "publisher": "Cats Protection",
+    "source_title": "Cats and Drinking",
+    "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+    "updated_date": null
+  },
+  "toileting": {
+    "publisher": "Cats Protection",
+    "source_title": "Cats & Toileting",
+    "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+    "updated_date": null
+  },
+  "grooming": {
+    "publisher": "Cats Protection",
+    "source_title": "Grooming Your Cat",
+    "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/grooming",
+    "updated_date": null
+  },
+  "bringing_home": {
+    "publisher": "Cats Protection",
+    "source_title": "Bringing a Cat Home",
+    "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+    "updated_date": null
+  },
+  "scratching": {
+    "publisher": "Cats Protection",
+    "source_title": "Cats and Scratching",
+    "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/scratching",
+    "updated_date": null
+  },
+  "play": {
+    "publisher": "Cats Protection",
+    "source_title": "Cats and Play",
+    "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-play",
+    "updated_date": null
+  },
+  "introductions": {
+    "publisher": "Cats Protection",
+    "source_title": "Introducing Cats & Kittens",
+    "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/introducing-cats",
+    "updated_date": null
+  },
+  "fighting": {
+    "publisher": "Cats Protection",
+    "source_title": "Cats and Fighting",
+    "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-fighting",
+    "updated_date": null
+  },
+  "carrier": {
+    "publisher": "Cats Protection",
+    "source_title": "Choosing and Using a Cat Carrier",
+    "url": "https://www.cats.org.uk/help-and-advice/getting-a-cat/how-to-choose-and-use-a-cat-carrier",
+    "updated_date": null
+  },
+  "home_safety": {
+    "publisher": "Cats Protection",
+    "source_title": "Preparing Your Home For a Cat",
+    "url": "https://www.cats.org.uk/adopt-a-cat/preparing-for-a-cat",
+    "updated_date": null
+  },
+  "cornell_feeding": {
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "source_title": "Feeding Your Cat",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat",
+    "updated_date": "2026-04-30"
+  },
+  "anorexia": {
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "source_title": "Anorexia",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/anorexia",
+    "updated_date": null
+  },
+  "dyspnea": {
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "source_title": "Dyspnea (Difficulty Breathing)",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/dyspnea-difficulty-breathing",
+    "updated_date": null
+  },
+  "urinary": {
+    "publisher": "Cornell University College of Veterinary Medicine",
+    "source_title": "Feline Lower Urinary Tract Disease",
+    "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-lower-urinary-tract-disease",
+    "updated_date": "2016-10"
+  }
+}

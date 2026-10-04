@@ -1,0 +1,18 @@
+{
+  "model": "openai/gpt-4o-mini",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_backend": "sentence-transformers: sentence-transformers/all-MiniLM-L6-v2",
+  "top_k": 3,
+  "chunk_words": 70,
+  "overlap": 12,
+  "price_in_per_m": 0.15,
+  "price_out_per_m": 0.6,
+  "price_checked_date": "2026-10-03",
+  "price_source": "https://openrouter.ai/openai/gpt-4o-mini",
+  "target_metrics": {
+    "three_class_accuracy": 0.867,
+    "gold_all_retrieved": 0.8,
+    "red_flag_recall": 1.0
+  },
+  "system_sha256": "d171b46cbfdcc3d1bafb9bd9269417e14813e2bea84626c7e369055769a20d59"
+}

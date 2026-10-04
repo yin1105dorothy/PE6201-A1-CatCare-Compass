@@ -1,0 +1,16 @@
+﻿指标 / Metric,分子 / Numerator,分母 / Denominator,实测值 / Measured value,说明 / Description
+L1自动通过率 / L1 automated pass rate,9,10,0.9,"检查运行、标签、合同与状态 / Checks execution, labels, contracts and status, not factual entailment"
+三类准确率 / Three-category accuracy,9,9,1.0,排除T09，保留失败 / Excludes T09; failures remain in denominator
+多数类基线 / Majority-class baseline,5,9,0.5555555555555556,
+路径准确率 / Action accuracy,10,10,1.0,
+紧急召回 / Urgent recall,1,1,1.0,仅1条紧急题 / Only one urgent case
+紧急误转介率 / Urgent false-referral rate,0,9,0.0,失败另报 / Failures separately reported; absence of false referral is not correct routing
+任何兽医误转介率 / Any-vet false-referral rate,0,8,0.0,
+全部gold检索率 / All-gold retrieval rate,4,4,1.0,4条gold资料题 / Four answerable gold questions; not independent topic validation
+全部gold引用率 / All-gold citation rate,4,4,1.0,引用编号不证明事实正确 / Citation IDs do not establish correctness
+运行失败率 / Execution failure rate,0,10,0.0,
+资料不足占比 / Insufficient-evidence rate,2,10,0.2,状态计数 / Status count; not proof that every abstention is appropriate
+L2复核完成率 / L2 review completion,10,10,1.0,
+L2已复核通过率 / L2 pass rate among reviewed cases,8,10,0.8,
+L2全案例通过率 / Overall L2 pass rate,8,10,0.8,
+人工有用率 / Human-rated helpfulness,8,10,0.8,安全拒答可能缺少实质帮助 / Safe abstention may offer limited practical help

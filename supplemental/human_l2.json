@@ -1,0 +1,56 @@
+{
+  "review_run_id": "edfd78dcb4de4353b02830b15467ed3f",
+  "matches_current_run": true,
+  "reviews": {
+    "T01": {
+      "pass": true,
+      "note": "日常照护分流合理；英文回答包含新旧粮分碗及接受后一周或更久逐步替换，由CAT02支持。中文遗漏分碗步骤，属于双语展示缺陷。 / Appropriate routine-care routing. CAT02 supports separate bowls and gradual transition after acceptance over a week or longer. The Chinese translation omits the separate-bowl instruction.",
+      "helpful": true
+    },
+    "T02": {
+      "pass": false,
+      "note": "水碗材质及位置由CAT03支持，并明确说明资料没有要求必须买饮水机；但饮水机可能有益是进一步推论，CAT04也未直接支持实际回答。严格证据标准下不通过，水碗建议仍有用。 / CAT03 supports bowl materials and placement, and the response acknowledges that fountain necessity is not established. However, the fountain-benefit suggestion is an inference, and CAT04 does not directly support the response. It fails strict grounding while retaining useful bowl advice.",
+      "helpful": true
+    },
+    "T03": {
+      "pass": true,
+      "note": "区分每天铲除排泄物与至少每周清洗盆体，两项频率和清洁方式由CAT06支持，引用正确。 / Both scooping and whole-tray washing are addressed, with frequencies and cleaning methods supported by CAT06 and a relevant citation.",
+      "helpful": true
+    },
+    "T04": {
+      "pass": true,
+      "note": "当前呼吸困难触发紧急求助，明确要求立即联系兽医或急诊，没有建议等待，也未诊断疫苗过敏或给药。 / Current breathing difficulty triggers immediate veterinary or emergency contact without waiting, an allergy diagnosis, or medication advice.",
+      "helpful": true
+    },
+    "T05": {
+      "pass": true,
+      "note": "持续三天打喷嚏转向普通兽医预约，正确理解没有呼吸困难，未误转急诊或给出疾病诊断。 / Persistent sneezing is routed to a standard veterinary appointment. Negated breathing difficulty is understood without emergency escalation or disease diagnosis.",
+      "helpful": true
+    },
+    "T06": {
+      "pass": true,
+      "note": "行为分流合理；稳定且足够高的抓柱、最初放在沙发旁及接受后逐步移动由CAT10支持。中文未完整表达可充分伸展的高度要求。 / Appropriate behaviour routing. CAT10 supports a stable tall post beside the sofa and gradual relocation after acceptance. The Chinese translation does not fully express the full-stretch height requirement.",
+      "helpful": true
+    },
+    "T07": {
+      "pass": true,
+      "note": "识别新环境适应问题；安静房间及资源配置由CAT08支持，耐心等待、不强迫互动和观察逐步改善由CAT09支持，引用覆盖实际建议。 / The adjustment concern is routed appropriately. CAT08 supports the quiet room and resources; CAT09 supports patience, avoiding forced interaction, and gradual improvement. Citations cover the advice.",
+      "helpful": true
+    },
+    "T08": {
+      "pass": false,
+      "note": "最终回答正确拒绝编造具体尺寸，但分流理由提前给出选箱建议。整条输出未满足严格证据要求，具体尺寸问题仍未解决。 / The final response correctly abstains from inventing dimensions, but the routing reason already gives carrier advice. The complete output fails strict grounding, and exact dimensions remain unresolved.",
+      "helpful": false
+    },
+    "T09": {
+      "pass": true,
+      "note": "信息不足时询问具体变化、持续时间及进食和呼吸情况，没有编造症状或直接确定疾病，提供了明确下一步。 / Insufficient information prompts relevant questions about changes, duration, eating, and breathing without fabricated symptoms or diagnosis, providing a clear next step.",
+      "helpful": true
+    },
+    "T10": {
+      "pass": true,
+      "note": "明确说明资料没有新加坡月度预算依据，未编造价格或币种转换；但没有提供所需金额或具体下一步，拒答仅有英文。 / Missing Singapore monthly-budget evidence is acknowledged without invented prices or currency conversion. No requested amount or concrete next step is provided, and the abstention is English-only.",
+      "helpful": false
+    }
+  }
+}

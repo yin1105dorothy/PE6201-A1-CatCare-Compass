@@ -1,0 +1,107 @@
+[
+  {
+    "指标 / Metric": "L1自动通过率 / L1 automated pass rate",
+    "分子 / Numerator": 9,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 0.9,
+    "说明 / Description": "检查运行、标签、合同与状态 / Checks execution, labels, contracts and status, not factual entailment"
+  },
+  {
+    "指标 / Metric": "三类准确率 / Three-category accuracy",
+    "分子 / Numerator": 9,
+    "分母 / Denominator": 9,
+    "实测值 / Measured value": 1.0,
+    "说明 / Description": "排除T09，保留失败 / Excludes T09; failures remain in denominator"
+  },
+  {
+    "指标 / Metric": "多数类基线 / Majority-class baseline",
+    "分子 / Numerator": 5,
+    "分母 / Denominator": 9,
+    "实测值 / Measured value": 0.5555555555555556,
+    "说明 / Description": ""
+  },
+  {
+    "指标 / Metric": "路径准确率 / Action accuracy",
+    "分子 / Numerator": 10,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 1.0,
+    "说明 / Description": ""
+  },
+  {
+    "指标 / Metric": "紧急召回 / Urgent recall",
+    "分子 / Numerator": 1,
+    "分母 / Denominator": 1,
+    "实测值 / Measured value": 1.0,
+    "说明 / Description": "仅1条紧急题 / Only one urgent case"
+  },
+  {
+    "指标 / Metric": "紧急误转介率 / Urgent false-referral rate",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 9,
+    "实测值 / Measured value": 0.0,
+    "说明 / Description": "失败另报 / Failures separately reported; absence of false referral is not correct routing"
+  },
+  {
+    "指标 / Metric": "任何兽医误转介率 / Any-vet false-referral rate",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 8,
+    "实测值 / Measured value": 0.0,
+    "说明 / Description": ""
+  },
+  {
+    "指标 / Metric": "全部gold检索率 / All-gold retrieval rate",
+    "分子 / Numerator": 4,
+    "分母 / Denominator": 4,
+    "实测值 / Measured value": 1.0,
+    "说明 / Description": "4条gold资料题 / Four answerable gold questions; not independent topic validation"
+  },
+  {
+    "指标 / Metric": "全部gold引用率 / All-gold citation rate",
+    "分子 / Numerator": 4,
+    "分母 / Denominator": 4,
+    "实测值 / Measured value": 1.0,
+    "说明 / Description": "引用编号不证明事实正确 / Citation IDs do not establish correctness"
+  },
+  {
+    "指标 / Metric": "运行失败率 / Execution failure rate",
+    "分子 / Numerator": 0,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 0.0,
+    "说明 / Description": ""
+  },
+  {
+    "指标 / Metric": "资料不足占比 / Insufficient-evidence rate",
+    "分子 / Numerator": 2,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 0.2,
+    "说明 / Description": "状态计数 / Status count; not proof that every abstention is appropriate"
+  },
+  {
+    "指标 / Metric": "L2复核完成率 / L2 review completion",
+    "分子 / Numerator": 10,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 1.0,
+    "说明 / Description": ""
+  },
+  {
+    "指标 / Metric": "L2已复核通过率 / L2 pass rate among reviewed cases",
+    "分子 / Numerator": 8,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 0.8,
+    "说明 / Description": ""
+  },
+  {
+    "指标 / Metric": "L2全案例通过率 / Overall L2 pass rate",
+    "分子 / Numerator": 8,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 0.8,
+    "说明 / Description": ""
+  },
+  {
+    "指标 / Metric": "人工有用率 / Human-rated helpfulness",
+    "分子 / Numerator": 8,
+    "分母 / Denominator": 10,
+    "实测值 / Measured value": 0.8,
+    "说明 / Description": "安全拒答可能缺少实质帮助 / Safe abstention may offer limited practical help"
+  }
+]

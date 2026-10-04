@@ -1,0 +1,291 @@
+{
+  "run_id": "29bbe174a29045f0972af040c9cdf1e8",
+  "run_time_utc": "2026-10-04T10:22:19.464024+00:00",
+  "caseset_sha256": "955a66b1747f22305ab869dadb2dbee0e92aff42216da8e7826dbb60c50b4e3b",
+  "system_sha256": "d171b46cbfdcc3d1bafb9bd9269417e14813e2bea84626c7e369055769a20d59",
+  "knowledge_sha256": "548ded5cbfa24ce9fc8ee182a38e1a4209ff692874f357e3539537b87409c12c",
+  "usage": {
+    "in": 15986,
+    "out": 2490,
+    "calls": 30,
+    "successful_calls": 30,
+    "usage_missing_calls": 0
+  },
+  "elapsed_seconds": 48.1365,
+  "call_log": [
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 536,
+      "output_tokens": 82,
+      "error": null,
+      "elapsed_seconds": 2.1223
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 524,
+      "output_tokens": 44,
+      "error": null,
+      "elapsed_seconds": 0.888
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 536,
+      "output_tokens": 79,
+      "error": null,
+      "elapsed_seconds": 1.8968
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 519,
+      "output_tokens": 138,
+      "error": null,
+      "elapsed_seconds": 4.2458
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 528,
+      "output_tokens": 67,
+      "error": null,
+      "elapsed_seconds": 1.38
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 517,
+      "output_tokens": 31,
+      "error": null,
+      "elapsed_seconds": 1.3566
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 539,
+      "output_tokens": 78,
+      "error": null,
+      "elapsed_seconds": 1.7352
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 526,
+      "output_tokens": 69,
+      "error": null,
+      "elapsed_seconds": 1.6899
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 536,
+      "output_tokens": 80,
+      "error": null,
+      "elapsed_seconds": 1.2387
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 524,
+      "output_tokens": 44,
+      "error": null,
+      "elapsed_seconds": 1.3593
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 535,
+      "output_tokens": 64,
+      "error": null,
+      "elapsed_seconds": 1.0475
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 529,
+      "output_tokens": 94,
+      "error": null,
+      "elapsed_seconds": 1.7681
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 545,
+      "output_tokens": 73,
+      "error": null,
+      "elapsed_seconds": 1.0048
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 525,
+      "output_tokens": 93,
+      "error": null,
+      "elapsed_seconds": 1.7243
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 542,
+      "output_tokens": 80,
+      "error": null,
+      "elapsed_seconds": 1.2562
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 525,
+      "output_tokens": 45,
+      "error": null,
+      "elapsed_seconds": 0.7355
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 539,
+      "output_tokens": 89,
+      "error": null,
+      "elapsed_seconds": 1.9259
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 538,
+      "output_tokens": 168,
+      "error": null,
+      "elapsed_seconds": 2.2744
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 536,
+      "output_tokens": 45,
+      "error": null,
+      "elapsed_seconds": 0.7379
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 533,
+      "output_tokens": 94,
+      "error": null,
+      "elapsed_seconds": 1.2865
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 534,
+      "output_tokens": 78,
+      "error": null,
+      "elapsed_seconds": 1.799
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 521,
+      "output_tokens": 101,
+      "error": null,
+      "elapsed_seconds": 1.3555
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 538,
+      "output_tokens": 103,
+      "error": null,
+      "elapsed_seconds": 1.3475
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 531,
+      "output_tokens": 133,
+      "error": null,
+      "elapsed_seconds": 2.2301
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 534,
+      "output_tokens": 61,
+      "error": null,
+      "elapsed_seconds": 1.527
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 528,
+      "output_tokens": 110,
+      "error": null,
+      "elapsed_seconds": 1.7743
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 547,
+      "output_tokens": 74,
+      "error": null,
+      "elapsed_seconds": 1.7133
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 541,
+      "output_tokens": 162,
+      "error": null,
+      "elapsed_seconds": 2.5203
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 542,
+      "output_tokens": 74,
+      "error": null,
+      "elapsed_seconds": 1.0894
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 538,
+      "output_tokens": 37,
+      "error": null,
+      "elapsed_seconds": 0.8497
+    }
+  ],
+  "top_k": 3,
+  "embedding_backend": "sentence-transformers: sentence-transformers/all-MiniLM-L6-v2",
+  "model": "openai/gpt-4o-mini",
+  "estimated_cost_usd": 0.0038919000000000002
+}

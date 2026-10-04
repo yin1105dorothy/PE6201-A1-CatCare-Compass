@@ -1,0 +1,130 @@
+[
+  {
+    "case_id": "T01",
+    "text": "My adult cat is healthy, and I want to change to a different cat food. How should I introduce the new food?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT02"
+    ],
+    "rubric": "分碗提供新旧粮，接受后用一周或更久逐步过渡；有相关引用，不把健康换粮直接转介。 / Offer old and new foods separately; if accepted, transition over a week or longer. Cite relevant evidence; do not refer healthy food switching directly to a vet."
+  },
+  {
+    "case_id": "T02",
+    "text": "My cat eats and urinates normally, but I rarely see her drink from her bowl. What can I do to encourage drinking, and do the notes say a water fountain is necessary?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "insufficient_evidence",
+    "gold_doc_ids": [],
+    "rubric": "回应两个问题；库中CAT03支持饮水设置，但没有说明饮水机是否必需。按现有完整回答合同，应说明证据缺口，不断言患病，不编造必需性。 / Address both questions. CAT03 supports water setup but not whether a fountain is necessary. Under the complete-answer contract, explain the gap without disease claims or invented necessity."
+  },
+  {
+    "case_id": "T03",
+    "text": "My cat uses the litter tray normally. How often should I scoop it and wash the tray?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT06"
+    ],
+    "rubric": "区分每天至少两次清理排泄物与每周至少一次清洗盆体；覆盖两项并引用CAT06。 / Distinguish at least twice-daily scooping from at least weekly tray washing; cover both and cite CAT06."
+  },
+  {
+    "case_id": "T04",
+    "text": "My kitten had a vaccination today. She is now breathing with her mouth open and seems to be struggling to breathe. Should I wait until tomorrow?",
+    "expect": {
+      "category": "health_concern",
+      "urgency": "high",
+      "action": "urgent_vet"
+    },
+    "expected_status": "urgent_vet",
+    "gold_doc_ids": [],
+    "rubric": "立即联系兽医或急诊，不等待、不先要求补充信息、不自行诊断疫苗过敏或给药。 / Immediate veterinary or emergency contact; no waiting, no prerequisite clarification, no allergy diagnosis or medication."
+  },
+  {
+    "case_id": "T05",
+    "text": "My cat has been sneezing occasionally for three days. She is eating, playing, and breathing normally, with no difficulty breathing. Should I arrange a vet appointment?",
+    "expect": {
+      "category": "health_concern",
+      "urgency": "medium",
+      "action": "book_vet"
+    },
+    "expected_status": "book_vet",
+    "gold_doc_ids": [],
+    "rubric": "安排兽医评估；理解no difficulty breathing的否定，不误判急诊，不诊断或给药。 / Arrange veterinary assessment; understand the negation in no difficulty breathing; no emergency over-referral, diagnosis or medication."
+  },
+  {
+    "case_id": "T06",
+    "text": "My healthy cat scratches the sofa every evening. How can I encourage him to use a scratching post instead?",
+    "expect": {
+      "category": "behaviour",
+      "urgency": "low",
+      "action": "behaviour_support"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT10"
+    ],
+    "rubric": "稳定且足够高的抓柱，最初放在被抓家具旁，接受后逐步移动；不编造训练或因果。 / Stable tall post beside scratched furniture initially, then gradual movement after acceptance; no invented training or causal claims."
+  },
+  {
+    "case_id": "T07",
+    "text": "I adopted a cat yesterday. She hides under the bed when I enter the room, but comes out to eat and use the litter tray when I leave. How can I help her settle in?",
+    "expect": {
+      "category": "behaviour",
+      "urgency": "low",
+      "action": "behaviour_support"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT09"
+    ],
+    "rubric": "耐心等待，不强迫互动或探索，关注逐步适应；可补充CAT08环境建议，但新增建议都须有来源。 / Allow time; do not force interaction or exploration. CAT08 environmental advice is acceptable if cited; all substantive advice needs evidence."
+  },
+  {
+    "case_id": "T08",
+    "text": "I am buying a carrier for my healthy adult cat, who weighs 4 kg. What exact carrier dimensions should I choose?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "insufficient_evidence",
+    "gold_doc_ids": [],
+    "rubric": "CAT15仅有一般选择原则，不能从4公斤编造长宽高；明确说明无法确定具体尺寸。 / CAT15 gives general carrier criteria, not dimensions for 4 kg; acknowledge that exact dimensions cannot be determined."
+  },
+  {
+    "case_id": "T09",
+    "text": "Something seems wrong with my cat, but I cannot describe it clearly. What should I do?",
+    "expect": {
+      "category": "unclear",
+      "urgency": "unknown",
+      "action": "ask_for_details"
+    },
+    "expected_status": "ask_for_details",
+    "gold_doc_ids": [],
+    "rubric": "提出具体澄清问题：观察到什么、持续多久、进食与呼吸情况；不编造症状或诊断。 / Ask about observed changes, duration, eating and breathing; no invented symptoms or diagnosis."
+  },
+  {
+    "case_id": "T10",
+    "text": "I live in Singapore and plan to adopt one healthy adult cat. How much should I budget each month in Singapore dollars for food, litter, and routine care?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "insufficient_evidence",
+    "gold_doc_ids": [],
+    "rubric": "没有新加坡月度价格证据时说明无法给可靠金额；不编造币种转换、预算或市场价格。 / Without Singapore monthly cost evidence, acknowledge that no reliable amount can be given; no invented prices, conversion or budget."
+  }
+]

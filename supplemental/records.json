@@ -1,0 +1,2037 @@
+[
+  {
+    "case_id": "T01",
+    "text": "My adult cat is healthy, and I want to change to a different cat food. How should I introduce the new food?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT02"
+    ],
+    "rubric": "分碗提供新旧粮，接受后用一周或更久逐步过渡；有相关引用，不把健康换粮直接转介。 / Offer old and new foods separately; if accepted, transition over a week or longer. Cite relevant evidence; do not refer healthy food switching directly to a vet.",
+    "record": {
+      "input": "My adult cat is healthy, and I want to change to a different cat food. How should I introduce the new food?",
+      "ok": true,
+      "status": "answered",
+      "triage": {
+        "output": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "You are looking to change your cat's food, which is a routine care question. 你想更换猫粮，这是一个常规护理问题。"
+        },
+        "candidate": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "You are looking to change your cat's food, which is a routine care question. 你想更换猫粮，这是一个常规护理问题。"
+        },
+        "raw": "{\"category\":\"routine_care\",\"urgency\":\"low\",\"action\":\"home_care\",\"reason\":\"You are looking to change your cat's food, which is a routine care question. 你想更换猫粮，这是一个常规护理问题。\"}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 1.2206,
+        "usage": {
+          "in": 540,
+          "out": 52,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": {
+        "ok": true,
+        "output": {
+          "status": "answered",
+          "answer": "To introduce new cat food, offer a small amount of the new food alongside the usual food in separate bowls. If your cat accepts it, gradually increase the new food while decreasing the old food over a week or longer. 如果您的猫接受新食物，可以在一周或更长时间内逐渐增加新食物，同时减少旧食物。",
+          "citations": [
+            "CAT02-C01"
+          ]
+        },
+        "candidate": {
+          "status": "answered",
+          "answer": "To introduce new cat food, offer a small amount of the new food alongside the usual food in separate bowls. If your cat accepts it, gradually increase the new food while decreasing the old food over a week or longer. 如果您的猫接受新食物，可以在一周或更长时间内逐渐增加新食物，同时减少旧食物。",
+          "citations": [
+            "CAT02-C01"
+          ]
+        },
+        "raw": "{\n  \"status\": \"answered\",\n  \"answer\": \"To introduce new cat food, offer a small amount of the new food alongside the usual food in separate bowls. If your cat accepts it, gradually increase the new food while decreasing the old food over a week or longer. 如果您的猫接受新食物，可以在一周或更长时间内逐渐增加新食物，同时减少旧食物。\",\n  \"citations\": [\"CAT02-C01\"]\n}",
+        "hits": [
+          {
+            "chunk_id": "CAT02-C01",
+            "doc_id": 1,
+            "text": "Changing a cat's food gradually. Cats Protection advises offering a small amount of new food beside the usual food in separate bowls, rather than mixing them. If the cat accepts it, increase the new food and reduce the old food over a week or longer. If the cat refuses it or becomes unwell, retain the old food and seek veterinary advice.",
+            "score": 0.7604265213012695,
+            "meta": {
+              "stable_id": "CAT02",
+              "title": "Changing a cat's food gradually",
+              "title_cn": "逐步换粮",
+              "category": "routine_care",
+              "topic": "diet_transition",
+              "language": "en",
+              "summary_cn": "该指南建议新旧粮分碗提供，并用一周或更久逐步过渡；不接受或不适时咨询兽医。",
+              "publisher": "Cats Protection",
+              "source_title": "Feeding Your Cat",
+              "url": "https://www.cats.org.uk/help-and-advice/diet/feeding",
+              "updated_date": null,
+              "source_section": "Changing your cat's food",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT01-C01",
+            "doc_id": 0,
+            "text": "Complete and complementary cat food. Cats Protection recommends food labelled complete because it supplies the nutrients a cat needs. Complementary products, including treats, do not provide a balanced diet by themselves. Food should suit the cat's life stage. Homemade meals are not recommended unless a veterinarian advises them for a medical reason.",
+            "score": 0.6012428998947144,
+            "meta": {
+              "stable_id": "CAT01",
+              "title": "Complete and complementary cat food",
+              "title_cn": "完整主食与补充食品",
+              "category": "routine_care",
+              "topic": "food_selection",
+              "language": "en",
+              "summary_cn": "选标明 complete 的食品；complementary 食品不能单独充当均衡主食。",
+              "publisher": "Cats Protection",
+              "source_title": "Feeding Your Cat",
+              "url": "https://www.cats.org.uk/help-and-advice/diet/feeding",
+              "updated_date": null,
+              "source_section": "What should I feed my cat?",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT17-C01",
+            "doc_id": 16,
+            "text": "Storing dry and opened canned food. Cornell recommends storing dry cat food in a cool, dry place, checking its expiry date and using an airtight container to help preserve nutrients and flavour. Prolonged storage can degrade vitamins and allow fats to become rancid. Refrigerate unused portions of opened canned food to preserve quality and reduce spoilage.",
+            "score": 0.4599888324737549,
+            "meta": {
+              "stable_id": "CAT17",
+              "title": "Storing dry and opened canned food",
+              "title_cn": "干粮与开封罐头储存",
+              "category": "routine_care",
+              "topic": "food_storage",
+              "language": "en",
+              "summary_cn": "干粮阴凉干燥密封保存并检查到期日；开封罐头的未用部分应冷藏。",
+              "publisher": "Cornell University College of Veterinary Medicine",
+              "source_title": "Feeding Your Cat",
+              "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feeding-your-cat",
+              "updated_date": "2026-04-30",
+              "source_section": "Types of Commercial Cat Food: Dry Food; Canned Food",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "stable_id": "CAT02",
+            "title": "Changing a cat's food gradually",
+            "title_cn": "逐步换粮",
+            "category": "routine_care",
+            "topic": "diet_transition",
+            "language": "en",
+            "summary_cn": "该指南建议新旧粮分碗提供，并用一周或更久逐步过渡；不接受或不适时咨询兽医。",
+            "publisher": "Cats Protection",
+            "source_title": "Feeding Your Cat",
+            "url": "https://www.cats.org.uk/help-and-advice/diet/feeding",
+            "updated_date": null,
+            "source_section": "Changing your cat's food",
+            "accessed_date": "2026-10-02",
+            "content_type": "source-grounded paraphrase"
+          }
+        ],
+        "error": null,
+        "contract_failed": [],
+        "elapsed_seconds": 1.3836,
+        "usage": {
+          "in": 534,
+          "out": 97,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "message": "To introduce new cat food, offer a small amount of the new food alongside the usual food in separate bowls. If your cat accepts it, gradually increase the new food while decreasing the old food over a week or longer. 如果您的猫接受新食物，可以在一周或更长时间内逐渐增加新食物，同时减少旧食物。",
+      "sources": [
+        {
+          "stable_id": "CAT02",
+          "title": "Changing a cat's food gradually",
+          "title_cn": "逐步换粮",
+          "category": "routine_care",
+          "topic": "diet_transition",
+          "language": "en",
+          "summary_cn": "该指南建议新旧粮分碗提供，并用一周或更久逐步过渡；不接受或不适时咨询兽医。",
+          "publisher": "Cats Protection",
+          "source_title": "Feeding Your Cat",
+          "url": "https://www.cats.org.uk/help-and-advice/diet/feeding",
+          "updated_date": null,
+          "source_section": "Changing your cat's food",
+          "accessed_date": "2026-10-02",
+          "content_type": "source-grounded paraphrase"
+        }
+      ],
+      "elapsed_seconds": 2.6043,
+      "usage": {
+        "in": 1074,
+        "out": 149,
+        "calls": 2,
+        "successful_calls": 2,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.0002505,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 540,
+          "output_tokens": 52,
+          "error": null,
+          "elapsed_seconds": 1.2203
+        },
+        {
+          "stage": "rag_answer",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 534,
+          "output_tokens": 97,
+          "error": null,
+          "elapsed_seconds": 1.3593
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "rag_contract",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [
+      "CAT01",
+      "CAT02",
+      "CAT17"
+    ],
+    "cited_doc_ids": [
+      "CAT02"
+    ],
+    "gold_all_retrieved": true,
+    "gold_all_cited": true
+  },
+  {
+    "case_id": "T02",
+    "text": "My cat eats and urinates normally, but I rarely see her drink from her bowl. What can I do to encourage drinking, and do the notes say a water fountain is necessary?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "insufficient_evidence",
+    "gold_doc_ids": [],
+    "rubric": "回应两个问题；库中CAT03支持饮水设置，但没有说明饮水机是否必需。按现有完整回答合同，应说明证据缺口，不断言患病，不编造必需性。 / Address both questions. CAT03 supports water setup but not whether a fountain is necessary. Under the complete-answer contract, explain the gap without disease claims or invented necessity.",
+    "record": {
+      "input": "My cat eats and urinates normally, but I rarely see her drink from her bowl. What can I do to encourage drinking, and do the notes say a water fountain is necessary?",
+      "ok": true,
+      "status": "answered",
+      "triage": {
+        "output": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "The cat is eating and urinating normally, indicating no immediate health concern. Encouraging drinking can be addressed with home care strategies. 猫的饮食和排尿正常，表明没有立即的健康问题。鼓励饮水可以通过家庭护理策略来解决。"
+        },
+        "candidate": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "The cat is eating and urinating normally, indicating no immediate health concern. Encouraging drinking can be addressed with home care strategies. 猫的饮食和排尿正常，表明没有立即的健康问题。鼓励饮水可以通过家庭护理策略来解决。"
+        },
+        "raw": "{\n  \"category\": \"routine_care\",\n  \"urgency\": \"low\",\n  \"action\": \"home_care\",\n  \"reason\": \"The cat is eating and urinating normally, indicating no immediate health concern. Encouraging drinking can be addressed with home care strategies. 猫的饮食和排尿正常，表明没有立即的健康问题。鼓励饮水可以通过家庭护理策略来解决。\"\n}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 2.2165,
+        "usage": {
+          "in": 552,
+          "out": 90,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": {
+        "ok": true,
+        "output": {
+          "status": "answered",
+          "answer": "To encourage your cat to drink more, consider using wide ceramic, metal, or glass water bowls to avoid whisker discomfort, and place water bowls in several locations away from food and litter trays. Some cats may prefer moving water, so a water fountain could be beneficial. However, the evidence does not state that a water fountain is necessary. 为了鼓励您的猫多喝水，可以考虑使用宽陶瓷、金属或玻璃水碗，以避免胡须不适，并将水碗放在远离食物和猫砂盆的多个位置。有些猫可能更喜欢流动的水，因此水泉可能会有益。然而，证据并没有说明水泉是必要的。",
+          "citations": [
+            "CAT03-C01",
+            "CAT04-C01"
+          ]
+        },
+        "candidate": {
+          "status": "answered",
+          "answer": "To encourage your cat to drink more, consider using wide ceramic, metal, or glass water bowls to avoid whisker discomfort, and place water bowls in several locations away from food and litter trays. Some cats may prefer moving water, so a water fountain could be beneficial. However, the evidence does not state that a water fountain is necessary. 为了鼓励您的猫多喝水，可以考虑使用宽陶瓷、金属或玻璃水碗，以避免胡须不适，并将水碗放在远离食物和猫砂盆的多个位置。有些猫可能更喜欢流动的水，因此水泉可能会有益。然而，证据并没有说明水泉是必要的。",
+          "citations": [
+            "CAT03-C01",
+            "CAT04-C01"
+          ]
+        },
+        "raw": "{\n  \"status\": \"answered\",\n  \"answer\": \"To encourage your cat to drink more, consider using wide ceramic, metal, or glass water bowls to avoid whisker discomfort, and place water bowls in several locations away from food and litter trays. Some cats may prefer moving water, so a water fountain could be beneficial. However, the evidence does not state that a water fountain is necessary. 为了鼓励您的猫多喝水，可以考虑使用宽陶瓷、金属或玻璃水碗，以避免胡须不适，并将水碗放在远离食物和猫砂盆的多个位置。有些猫可能更喜欢流动的水，因此水泉可能会有益。然而，证据并没有说明水泉是必要的。\",\n  \"citations\": [\n    \"CAT03-C01\",\n    \"CAT04-C01\"\n  ]\n}",
+        "hits": [
+          {
+            "chunk_id": "CAT03-C01",
+            "doc_id": 2,
+            "text": "Water bowls and drinking preferences. Cats Protection suggests wide ceramic, metal or glass water bowls so whiskers are not pressed against the sides. Keep water separate from food and litter trays, and offer bowls in several locations. Some cats prefer moving water. A sudden change in drinking should be checked by a veterinarian.",
+            "score": 0.6892637014389038,
+            "meta": {
+              "stable_id": "CAT03",
+              "title": "Water bowls and drinking preferences",
+              "title_cn": "饮水碗与位置",
+              "category": "routine_care",
+              "topic": "water_setup",
+              "language": "en",
+              "summary_cn": "宽口陶瓷、金属或玻璃碗，多处提供并远离食物和猫砂盆；饮水突然变化需检查。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats and Drinking",
+              "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+              "updated_date": null,
+              "source_section": "How much should my cat be drinking?",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT04-C01",
+            "doc_id": 3,
+            "text": "Water rather than milk. Cats need continuous access to clean drinking water. Cats Protection advises against cow's milk and human milk alternatives: many cats cannot digest lactose well, and alternatives may contain unsuitable ingredients. Commercial cat milk is an occasional high-calorie treat, not a replacement for water or a balanced diet.",
+            "score": 0.607457160949707,
+            "meta": {
+              "stable_id": "CAT04",
+              "title": "Water rather than milk",
+              "title_cn": "水与牛奶",
+              "category": "routine_care",
+              "topic": "milk_and_water",
+              "language": "en",
+              "summary_cn": "水应持续供应；牛奶及人用替代奶不推荐，猫奶也不能代替水或均衡饮食。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats and Drinking",
+              "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+              "updated_date": null,
+              "source_section": "What do cats drink?; Do cats drink milk?",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT20-C01",
+            "doc_id": 19,
+            "text": "Straining with little or no urine. Cornell describes repeated attempts to urinate, straining and little or no urine as signs that can occur with urethral obstruction. Other urinary problems can look similar, so symptoms alone cannot establish a diagnosis. Suspected obstruction requires immediate veterinary attention because it is potentially life-threatening. Male cats have greater obstruction risk.",
+            "score": 0.507510781288147,
+            "meta": {
+              "stable_id": "CAT20",
+              "title": "Straining with little or no urine",
+              "title_cn": "用力排尿却尿量极少",
+              "category": "health_concern",
+              "topic": "suspected_urinary_obstruction",
+              "language": "en",
+              "summary_cn": "反复用力却几乎无尿可能涉及尿道阻塞，疑似阻塞应立即求助；相似症状不能自行确诊。",
+              "publisher": "Cornell University College of Veterinary Medicine",
+              "source_title": "Feline Lower Urinary Tract Disease",
+              "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-lower-urinary-tract-disease",
+              "updated_date": "2016-10",
+              "source_section": "Urethral Obstruction",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "stable_id": "CAT03",
+            "title": "Water bowls and drinking preferences",
+            "title_cn": "饮水碗与位置",
+            "category": "routine_care",
+            "topic": "water_setup",
+            "language": "en",
+            "summary_cn": "宽口陶瓷、金属或玻璃碗，多处提供并远离食物和猫砂盆；饮水突然变化需检查。",
+            "publisher": "Cats Protection",
+            "source_title": "Cats and Drinking",
+            "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+            "updated_date": null,
+            "source_section": "How much should my cat be drinking?",
+            "accessed_date": "2026-10-02",
+            "content_type": "source-grounded paraphrase"
+          },
+          {
+            "stable_id": "CAT04",
+            "title": "Water rather than milk",
+            "title_cn": "水与牛奶",
+            "category": "routine_care",
+            "topic": "milk_and_water",
+            "language": "en",
+            "summary_cn": "水应持续供应；牛奶及人用替代奶不推荐，猫奶也不能代替水或均衡饮食。",
+            "publisher": "Cats Protection",
+            "source_title": "Cats and Drinking",
+            "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+            "updated_date": null,
+            "source_section": "What do cats drink?; Do cats drink milk?",
+            "accessed_date": "2026-10-02",
+            "content_type": "source-grounded paraphrase"
+          }
+        ],
+        "error": null,
+        "contract_failed": [],
+        "elapsed_seconds": 2.5951,
+        "usage": {
+          "in": 539,
+          "out": 183,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "message": "To encourage your cat to drink more, consider using wide ceramic, metal, or glass water bowls to avoid whisker discomfort, and place water bowls in several locations away from food and litter trays. Some cats may prefer moving water, so a water fountain could be beneficial. However, the evidence does not state that a water fountain is necessary. 为了鼓励您的猫多喝水，可以考虑使用宽陶瓷、金属或玻璃水碗，以避免胡须不适，并将水碗放在远离食物和猫砂盆的多个位置。有些猫可能更喜欢流动的水，因此水泉可能会有益。然而，证据并没有说明水泉是必要的。",
+      "sources": [
+        {
+          "stable_id": "CAT03",
+          "title": "Water bowls and drinking preferences",
+          "title_cn": "饮水碗与位置",
+          "category": "routine_care",
+          "topic": "water_setup",
+          "language": "en",
+          "summary_cn": "宽口陶瓷、金属或玻璃碗，多处提供并远离食物和猫砂盆；饮水突然变化需检查。",
+          "publisher": "Cats Protection",
+          "source_title": "Cats and Drinking",
+          "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+          "updated_date": null,
+          "source_section": "How much should my cat be drinking?",
+          "accessed_date": "2026-10-02",
+          "content_type": "source-grounded paraphrase"
+        },
+        {
+          "stable_id": "CAT04",
+          "title": "Water rather than milk",
+          "title_cn": "水与牛奶",
+          "category": "routine_care",
+          "topic": "milk_and_water",
+          "language": "en",
+          "summary_cn": "水应持续供应；牛奶及人用替代奶不推荐，猫奶也不能代替水或均衡饮食。",
+          "publisher": "Cats Protection",
+          "source_title": "Cats and Drinking",
+          "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+          "updated_date": null,
+          "source_section": "What do cats drink?; Do cats drink milk?",
+          "accessed_date": "2026-10-02",
+          "content_type": "source-grounded paraphrase"
+        }
+      ],
+      "elapsed_seconds": 4.8116,
+      "usage": {
+        "in": 1091,
+        "out": 273,
+        "calls": 2,
+        "successful_calls": 2,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.00032744999999999996,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 552,
+          "output_tokens": 90,
+          "error": null,
+          "elapsed_seconds": 2.2164
+        },
+        {
+          "stage": "rag_answer",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 539,
+          "output_tokens": 183,
+          "error": null,
+          "elapsed_seconds": 2.5731
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "rag_contract",
+        true
+      ],
+      [
+        "expected_status",
+        false
+      ]
+    ],
+    "l1": false,
+    "failed": [
+      "expected_status"
+    ],
+    "retrieved_doc_ids": [
+      "CAT03",
+      "CAT04",
+      "CAT20"
+    ],
+    "cited_doc_ids": [
+      "CAT03",
+      "CAT04"
+    ],
+    "gold_all_retrieved": null,
+    "gold_all_cited": null
+  },
+  {
+    "case_id": "T03",
+    "text": "My cat uses the litter tray normally. How often should I scoop it and wash the tray?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT06"
+    ],
+    "rubric": "区分每天至少两次清理排泄物与每周至少一次清洗盆体；覆盖两项并引用CAT06。 / Distinguish at least twice-daily scooping from at least weekly tray washing; cover both and cite CAT06.",
+    "record": {
+      "input": "My cat uses the litter tray normally. How often should I scoop it and wash the tray?",
+      "ok": true,
+      "status": "answered",
+      "triage": {
+        "output": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "This is a general hygiene question about litter tray maintenance. 这是一个关于猫砂盆维护的一般卫生问题。"
+        },
+        "candidate": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "This is a general hygiene question about litter tray maintenance. 这是一个关于猫砂盆维护的一般卫生问题。"
+        },
+        "raw": "{\n  \"category\": \"routine_care\",\n  \"urgency\": \"low\",\n  \"action\": \"home_care\",\n  \"reason\": \"This is a general hygiene question about litter tray maintenance. 这是一个关于猫砂盆维护的一般卫生问题。\"\n}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 1.5021,
+        "usage": {
+          "in": 534,
+          "out": 58,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": {
+        "ok": true,
+        "output": {
+          "status": "answered",
+          "answer": "You should scoop the litter tray twice daily and wash it with hot soapy water or a cat-safe cleaner at least weekly. 每天至少清理猫砂盆两次，并至少每周用热肥皂水或猫安全清洁剂清洗一次。",
+          "citations": [
+            "CAT06-C01"
+          ]
+        },
+        "candidate": {
+          "status": "answered",
+          "answer": "You should scoop the litter tray twice daily and wash it with hot soapy water or a cat-safe cleaner at least weekly. 每天至少清理猫砂盆两次，并至少每周用热肥皂水或猫安全清洁剂清洗一次。",
+          "citations": [
+            "CAT06-C01"
+          ]
+        },
+        "raw": "{\n  \"status\": \"answered\",\n  \"answer\": \"You should scoop the litter tray twice daily and wash it with hot soapy water or a cat-safe cleaner at least weekly. 每天至少清理猫砂盆两次，并至少每周用热肥皂水或猫安全清洁剂清洗一次。\",\n  \"citations\": [\"CAT06-C01\"]\n}",
+        "hits": [
+          {
+            "chunk_id": "CAT06-C01",
+            "doc_id": 5,
+            "text": "Cleaning litter trays. Cats Protection advises removing urine and faeces twice daily, or more often if needed. Empty and wash the tray with hot soapy water or a cat-safe cleaner at least weekly. Covered trays may need thorough cleaning more often because they retain smells. Avoid newspaper or plastic liners inside the tray.",
+            "score": 0.7519640922546387,
+            "meta": {
+              "stable_id": "CAT06",
+              "title": "Cleaning litter trays",
+              "title_cn": "猫砂盆清洁",
+              "category": "routine_care",
+              "topic": "litter_cleaning",
+              "language": "en",
+              "summary_cn": "每天至少清理排泄物两次，每周至少彻底清洗一次；封闭盆可能需更频繁清洗。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats & Toileting",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+              "updated_date": null,
+              "source_section": "How to clean your cat's litter tray",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT05-C01",
+            "doc_id": 4,
+            "text": "Litter tray quantity and placement. Cats Protection recommends one litter tray for each cat plus one additional tray. Put trays in separate quiet, accessible locations, away from food, water and sleeping areas. Avoid noisy appliances and busy passageways. A row of neighbouring trays is not equivalent to distributing them. Cats with mobility difficulties benefit from low-sided trays.",
+            "score": 0.5028418898582458,
+            "meta": {
+              "stable_id": "CAT05",
+              "title": "Litter tray quantity and placement",
+              "title_cn": "猫砂盆数量与位置",
+              "category": "routine_care",
+              "topic": "litter_setup",
+              "language": "en",
+              "summary_cn": "每只猫一个盆，再额外加一个；分散放在安静、易到达的位置，行动困难的猫用低边盆。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats & Toileting",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+              "updated_date": null,
+              "source_section": "Where to put your cat's litter tray; The best litter tray for your cat",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT03-C01",
+            "doc_id": 2,
+            "text": "Water bowls and drinking preferences. Cats Protection suggests wide ceramic, metal or glass water bowls so whiskers are not pressed against the sides. Keep water separate from food and litter trays, and offer bowls in several locations. Some cats prefer moving water. A sudden change in drinking should be checked by a veterinarian.",
+            "score": 0.4350677728652954,
+            "meta": {
+              "stable_id": "CAT03",
+              "title": "Water bowls and drinking preferences",
+              "title_cn": "饮水碗与位置",
+              "category": "routine_care",
+              "topic": "water_setup",
+              "language": "en",
+              "summary_cn": "宽口陶瓷、金属或玻璃碗，多处提供并远离食物和猫砂盆；饮水突然变化需检查。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats and Drinking",
+              "url": "https://www.cats.org.uk/help-and-advice/diet/cats-and-drinking",
+              "updated_date": null,
+              "source_section": "How much should my cat be drinking?",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "stable_id": "CAT06",
+            "title": "Cleaning litter trays",
+            "title_cn": "猫砂盆清洁",
+            "category": "routine_care",
+            "topic": "litter_cleaning",
+            "language": "en",
+            "summary_cn": "每天至少清理排泄物两次，每周至少彻底清洗一次；封闭盆可能需更频繁清洗。",
+            "publisher": "Cats Protection",
+            "source_title": "Cats & Toileting",
+            "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+            "updated_date": null,
+            "source_section": "How to clean your cat's litter tray",
+            "accessed_date": "2026-10-02",
+            "content_type": "source-grounded paraphrase"
+          }
+        ],
+        "error": null,
+        "contract_failed": [],
+        "elapsed_seconds": 1.7287,
+        "usage": {
+          "in": 522,
+          "out": 80,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "message": "You should scoop the litter tray twice daily and wash it with hot soapy water or a cat-safe cleaner at least weekly. 每天至少清理猫砂盆两次，并至少每周用热肥皂水或猫安全清洁剂清洗一次。",
+      "sources": [
+        {
+          "stable_id": "CAT06",
+          "title": "Cleaning litter trays",
+          "title_cn": "猫砂盆清洁",
+          "category": "routine_care",
+          "topic": "litter_cleaning",
+          "language": "en",
+          "summary_cn": "每天至少清理排泄物两次，每周至少彻底清洗一次；封闭盆可能需更频繁清洗。",
+          "publisher": "Cats Protection",
+          "source_title": "Cats & Toileting",
+          "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+          "updated_date": null,
+          "source_section": "How to clean your cat's litter tray",
+          "accessed_date": "2026-10-02",
+          "content_type": "source-grounded paraphrase"
+        }
+      ],
+      "elapsed_seconds": 3.2309,
+      "usage": {
+        "in": 1056,
+        "out": 138,
+        "calls": 2,
+        "successful_calls": 2,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.00024119999999999998,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 534,
+          "output_tokens": 58,
+          "error": null,
+          "elapsed_seconds": 1.502
+        },
+        {
+          "stage": "rag_answer",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 522,
+          "output_tokens": 80,
+          "error": null,
+          "elapsed_seconds": 1.71
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "rag_contract",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [
+      "CAT03",
+      "CAT05",
+      "CAT06"
+    ],
+    "cited_doc_ids": [
+      "CAT06"
+    ],
+    "gold_all_retrieved": true,
+    "gold_all_cited": true
+  },
+  {
+    "case_id": "T04",
+    "text": "My kitten had a vaccination today. She is now breathing with her mouth open and seems to be struggling to breathe. Should I wait until tomorrow?",
+    "expect": {
+      "category": "health_concern",
+      "urgency": "high",
+      "action": "urgent_vet"
+    },
+    "expected_status": "urgent_vet",
+    "gold_doc_ids": [],
+    "rubric": "立即联系兽医或急诊，不等待、不先要求补充信息、不自行诊断疫苗过敏或给药。 / Immediate veterinary or emergency contact; no waiting, no prerequisite clarification, no allergy diagnosis or medication.",
+    "record": {
+      "input": "My kitten had a vaccination today. She is now breathing with her mouth open and seems to be struggling to breathe. Should I wait until tomorrow?",
+      "ok": true,
+      "status": "urgent_vet",
+      "triage": {
+        "output": {
+          "category": "health_concern",
+          "urgency": "high",
+          "action": "urgent_vet",
+          "reason": "The message contains a defined current high-risk signal. Contact a veterinarian or emergency clinic immediately.\n咨询包含已定义的当前高风险信号，请立即联系兽医或急诊。"
+        },
+        "candidate": {
+          "category": "health_concern",
+          "urgency": "high",
+          "action": "urgent_vet",
+          "reason": "The message contains a defined current high-risk signal. Contact a veterinarian or emergency clinic immediately.\n咨询包含已定义的当前高风险信号，请立即联系兽医或急诊。"
+        },
+        "raw": null,
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "red_flag_rule",
+        "rule_hits": [
+          "breathing_difficulty"
+        ],
+        "elapsed_seconds": 0.0001,
+        "usage": {
+          "in": 0,
+          "out": 0,
+          "calls": 0,
+          "successful_calls": 0,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": null,
+      "message": "Contact a veterinarian or animal emergency clinic immediately and describe the situation. Do not wait for further responses from this system.\n请立即联系兽医或动物急诊，说明当前情况，不要等待本系统进一步回答。",
+      "sources": [],
+      "elapsed_seconds": 0.0002,
+      "usage": {
+        "in": 0,
+        "out": 0,
+        "calls": 0,
+        "successful_calls": 0,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.0,
+      "call_log": []
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [],
+    "cited_doc_ids": [],
+    "gold_all_retrieved": null,
+    "gold_all_cited": null
+  },
+  {
+    "case_id": "T05",
+    "text": "My cat has been sneezing occasionally for three days. She is eating, playing, and breathing normally, with no difficulty breathing. Should I arrange a vet appointment?",
+    "expect": {
+      "category": "health_concern",
+      "urgency": "medium",
+      "action": "book_vet"
+    },
+    "expected_status": "book_vet",
+    "gold_doc_ids": [],
+    "rubric": "安排兽医评估；理解no difficulty breathing的否定，不误判急诊，不诊断或给药。 / Arrange veterinary assessment; understand the negation in no difficulty breathing; no emergency over-referral, diagnosis or medication.",
+    "record": {
+      "input": "My cat has been sneezing occasionally for three days. She is eating, playing, and breathing normally, with no difficulty breathing. Should I arrange a vet appointment?",
+      "ok": true,
+      "status": "book_vet",
+      "triage": {
+        "output": {
+          "category": "health_concern",
+          "urgency": "medium",
+          "action": "book_vet",
+          "reason": "The cat has been sneezing for three days, which indicates a potential health concern that should be evaluated by a vet, even though she is otherwise eating, playing, and breathing normally. 猫已经打喷嚏三天，这表明可能存在健康问题，尽管她在其他方面正常进食、玩耍和呼吸，但仍应由兽医评估。"
+        },
+        "candidate": {
+          "category": "health_concern",
+          "urgency": "medium",
+          "action": "book_vet",
+          "reason": "The cat has been sneezing for three days, which indicates a potential health concern that should be evaluated by a vet, even though she is otherwise eating, playing, and breathing normally. 猫已经打喷嚏三天，这表明可能存在健康问题，尽管她在其他方面正常进食、玩耍和呼吸，但仍应由兽医评估。"
+        },
+        "raw": "{\n  \"category\": \"health_concern\",\n  \"urgency\": \"medium\",\n  \"action\": \"book_vet\",\n  \"reason\": \"The cat has been sneezing for three days, which indicates a potential health concern that should be evaluated by a vet, even though she is otherwise eating, playing, and breathing normally. 猫已经打喷嚏三天，这表明可能存在健康问题，尽管她在其他方面正常进食、玩耍和呼吸，但仍应由兽医评估。\"\n}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 2.3494,
+        "usage": {
+          "in": 548,
+          "out": 113,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": null,
+      "message": "Arrange a veterinary assessment and describe the signs and their duration.\n请安排兽医评估，并提供观察到的表现及持续时间。",
+      "sources": [],
+      "elapsed_seconds": 2.3494,
+      "usage": {
+        "in": 548,
+        "out": 113,
+        "calls": 1,
+        "successful_calls": 1,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.00015,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 548,
+          "output_tokens": 113,
+          "error": null,
+          "elapsed_seconds": 2.3492
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [],
+    "cited_doc_ids": [],
+    "gold_all_retrieved": null,
+    "gold_all_cited": null
+  },
+  {
+    "case_id": "T06",
+    "text": "My healthy cat scratches the sofa every evening. How can I encourage him to use a scratching post instead?",
+    "expect": {
+      "category": "behaviour",
+      "urgency": "low",
+      "action": "behaviour_support"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT10"
+    ],
+    "rubric": "稳定且足够高的抓柱，最初放在被抓家具旁，接受后逐步移动；不编造训练或因果。 / Stable tall post beside scratched furniture initially, then gradual movement after acceptance; no invented training or causal claims.",
+    "record": {
+      "input": "My healthy cat scratches the sofa every evening. How can I encourage him to use a scratching post instead?",
+      "ok": true,
+      "status": "answered",
+      "triage": {
+        "output": {
+          "category": "behaviour",
+          "urgency": "low",
+          "action": "behaviour_support",
+          "reason": "The cat is exhibiting unwanted scratching behavior on the sofa, which can be addressed with training and support. 这只猫在沙发上表现出不想要的抓挠行为，可以通过训练和支持来解决。"
+        },
+        "candidate": {
+          "category": "behaviour",
+          "urgency": "low",
+          "action": "behaviour_support",
+          "reason": "The cat is exhibiting unwanted scratching behavior on the sofa, which can be addressed with training and support. 这只猫在沙发上表现出不想要的抓挠行为，可以通过训练和支持来解决。"
+        },
+        "raw": "{\n  \"category\": \"behaviour\",\n  \"urgency\": \"low\",\n  \"action\": \"behaviour_support\",\n  \"reason\": \"The cat is exhibiting unwanted scratching behavior on the sofa, which can be addressed with training and support. 这只猫在沙发上表现出不想要的抓挠行为，可以通过训练和支持来解决。\"\n}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 1.2731,
+        "usage": {
+          "in": 536,
+          "out": 79,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": {
+        "ok": true,
+        "output": {
+          "status": "answered",
+          "answer": "To encourage your cat to use a scratching post instead of the sofa, place a stable scratching post tall enough for a full stretch next to the sofa. Once your cat starts using it, you can gradually move it to a different location. Providing separate posts for different cats is also recommended. 通过将一个足够高的稳定抓挠柱放在沙发旁边，鼓励您的猫使用抓挠柱。一旦您的猫开始使用它，您可以逐渐将其移动到不同的位置。还建议为不同的猫提供单独的抓挠柱。",
+          "citations": [
+            "CAT10-C01"
+          ]
+        },
+        "candidate": {
+          "status": "answered",
+          "answer": "To encourage your cat to use a scratching post instead of the sofa, place a stable scratching post tall enough for a full stretch next to the sofa. Once your cat starts using it, you can gradually move it to a different location. Providing separate posts for different cats is also recommended. 通过将一个足够高的稳定抓挠柱放在沙发旁边，鼓励您的猫使用抓挠柱。一旦您的猫开始使用它，您可以逐渐将其移动到不同的位置。还建议为不同的猫提供单独的抓挠柱。",
+          "citations": [
+            "CAT10-C01"
+          ]
+        },
+        "raw": "{\n  \"status\": \"answered\",\n  \"answer\": \"To encourage your cat to use a scratching post instead of the sofa, place a stable scratching post tall enough for a full stretch next to the sofa. Once your cat starts using it, you can gradually move it to a different location. Providing separate posts for different cats is also recommended. 通过将一个足够高的稳定抓挠柱放在沙发旁边，鼓励您的猫使用抓挠柱。一旦您的猫开始使用它，您可以逐渐将其移动到不同的位置。还建议为不同的猫提供单独的抓挠柱。\",\n  \"citations\": [\n    \"CAT10-C01\"\n  ]\n}",
+        "hits": [
+          {
+            "chunk_id": "CAT10-C01",
+            "doc_id": 9,
+            "text": "Choosing a scratching surface. For claw-maintenance scratching, Cats Protection recommends a stable post tall enough for a full stretch, initially beside the scratched furniture. A horizontal pad can suit cats that scratch carpets. Once accepted, move it gradually. Provide separate posts for different cats; scratching linked to anxiety also requires attention to the source of stress.",
+            "score": 0.7301467657089233,
+            "meta": {
+              "stable_id": "CAT10",
+              "title": "Choosing a scratching surface",
+              "title_cn": "选择抓挠用品",
+              "category": "behaviour",
+              "topic": "scratching",
+              "language": "en",
+              "summary_cn": "抓柱需稳定且足够高，先放在被抓家具附近；偏好横向抓挠的猫可用抓板。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats and Scratching",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/scratching",
+              "updated_date": null,
+              "source_section": "Prevent your cat from scratching your furniture",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT12-C01",
+            "doc_id": 11,
+            "text": "Redirecting rough play away from hands. Cats Protection discourages using fingers or toes as play targets. Use toys that keep hunting activity away from the body, such as wand toys or thrown balls. Regular play is particularly important indoors. Newly appearing play aggression in an adult cat should be checked by a veterinarian before seeking behavioural help.",
+            "score": 0.5163928270339966,
+            "meta": {
+              "stable_id": "CAT12",
+              "title": "Redirecting rough play away from hands",
+              "title_cn": "避免把手脚当玩具",
+              "category": "behaviour",
+              "topic": "rough_play",
+              "language": "en",
+              "summary_cn": "用逗猫棒或球代替手脚；成年猫突然出现攻击性玩耍时，先排查医疗原因。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats and Play",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-play",
+              "updated_date": null,
+              "source_section": "How can I teach my cat to play gently?; Is my cat's play too rough?",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT07-C01",
+            "doc_id": 6,
+            "text": "Introducing gentle grooming. Long-haired cats and cats unable to groom themselves may need brushing assistance. Cats Protection recommends introducing brushes gradually, working a little at a time and using minimal restraint. A sudden increase or decrease in self-grooming warrants a veterinary appointment, rather than assuming it is only a grooming preference.",
+            "score": 0.49567925930023193,
+            "meta": {
+              "stable_id": "CAT07",
+              "title": "Introducing gentle grooming",
+              "title_cn": "温和梳毛",
+              "category": "routine_care",
+              "topic": "grooming",
+              "language": "en",
+              "summary_cn": "梳毛应逐步适应、少量进行，减少强制固定；自我梳理突然增减应预约兽医。",
+              "publisher": "Cats Protection",
+              "source_title": "Grooming Your Cat",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/grooming",
+              "updated_date": null,
+              "source_section": "Do I need to groom my cat?; How to get your cat used to being groomed",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "stable_id": "CAT10",
+            "title": "Choosing a scratching surface",
+            "title_cn": "选择抓挠用品",
+            "category": "behaviour",
+            "topic": "scratching",
+            "language": "en",
+            "summary_cn": "抓柱需稳定且足够高，先放在被抓家具附近；偏好横向抓挠的猫可用抓板。",
+            "publisher": "Cats Protection",
+            "source_title": "Cats and Scratching",
+            "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/scratching",
+            "updated_date": null,
+            "source_section": "Prevent your cat from scratching your furniture",
+            "accessed_date": "2026-10-02",
+            "content_type": "source-grounded paraphrase"
+          }
+        ],
+        "error": null,
+        "contract_failed": [],
+        "elapsed_seconds": 2.3553,
+        "usage": {
+          "in": 524,
+          "out": 149,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "message": "To encourage your cat to use a scratching post instead of the sofa, place a stable scratching post tall enough for a full stretch next to the sofa. Once your cat starts using it, you can gradually move it to a different location. Providing separate posts for different cats is also recommended. 通过将一个足够高的稳定抓挠柱放在沙发旁边，鼓励您的猫使用抓挠柱。一旦您的猫开始使用它，您可以逐渐将其移动到不同的位置。还建议为不同的猫提供单独的抓挠柱。",
+      "sources": [
+        {
+          "stable_id": "CAT10",
+          "title": "Choosing a scratching surface",
+          "title_cn": "选择抓挠用品",
+          "category": "behaviour",
+          "topic": "scratching",
+          "language": "en",
+          "summary_cn": "抓柱需稳定且足够高，先放在被抓家具附近；偏好横向抓挠的猫可用抓板。",
+          "publisher": "Cats Protection",
+          "source_title": "Cats and Scratching",
+          "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/scratching",
+          "updated_date": null,
+          "source_section": "Prevent your cat from scratching your furniture",
+          "accessed_date": "2026-10-02",
+          "content_type": "source-grounded paraphrase"
+        }
+      ],
+      "elapsed_seconds": 3.6284,
+      "usage": {
+        "in": 1060,
+        "out": 228,
+        "calls": 2,
+        "successful_calls": 2,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.0002958,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 536,
+          "output_tokens": 79,
+          "error": null,
+          "elapsed_seconds": 1.273
+        },
+        {
+          "stage": "rag_answer",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 524,
+          "output_tokens": 149,
+          "error": null,
+          "elapsed_seconds": 2.333
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "rag_contract",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [
+      "CAT07",
+      "CAT10",
+      "CAT12"
+    ],
+    "cited_doc_ids": [
+      "CAT10"
+    ],
+    "gold_all_retrieved": true,
+    "gold_all_cited": true
+  },
+  {
+    "case_id": "T07",
+    "text": "I adopted a cat yesterday. She hides under the bed when I enter the room, but comes out to eat and use the litter tray when I leave. How can I help her settle in?",
+    "expect": {
+      "category": "behaviour",
+      "urgency": "low",
+      "action": "behaviour_support"
+    },
+    "expected_status": "answered",
+    "gold_doc_ids": [
+      "CAT09"
+    ],
+    "rubric": "耐心等待，不强迫互动或探索，关注逐步适应；可补充CAT08环境建议，但新增建议都须有来源。 / Allow time; do not force interaction or exploration. CAT08 environmental advice is acceptable if cited; all substantive advice needs evidence.",
+    "record": {
+      "input": "I adopted a cat yesterday. She hides under the bed when I enter the room, but comes out to eat and use the litter tray when I leave. How can I help her settle in?",
+      "ok": true,
+      "status": "answered",
+      "triage": {
+        "output": {
+          "category": "behaviour",
+          "urgency": "low",
+          "action": "behaviour_support",
+          "reason": "The cat is showing signs of fear and adjustment issues after adoption, which is common. Providing a safe space and allowing her to explore at her own pace can help. 这只猫在收养后表现出恐惧和适应问题，这是很常见的。提供一个安全的空间，让她以自己的节奏探索，可以帮助她适应。"
+        },
+        "candidate": {
+          "category": "behaviour",
+          "urgency": "low",
+          "action": "behaviour_support",
+          "reason": "The cat is showing signs of fear and adjustment issues after adoption, which is common. Providing a safe space and allowing her to explore at her own pace can help. 这只猫在收养后表现出恐惧和适应问题，这是很常见的。提供一个安全的空间，让她以自己的节奏探索，可以帮助她适应。"
+        },
+        "raw": "{\n  \"category\": \"behaviour\",\n  \"urgency\": \"low\",\n  \"action\": \"behaviour_support\",\n  \"reason\": \"The cat is showing signs of fear and adjustment issues after adoption, which is common. Providing a safe space and allowing her to explore at her own pace can help. 这只猫在收养后表现出恐惧和适应问题，这是很常见的。提供一个安全的空间，让她以自己的节奏探索，可以帮助她适应。\"\n}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 1.5703,
+        "usage": {
+          "in": 554,
+          "out": 107,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": {
+        "ok": true,
+        "output": {
+          "status": "answered",
+          "answer": "To help your new cat settle in, prepare a quiet room with separate food and water areas, a private litter tray, a hiding place, and a secure resting spot. Be patient and allow her time to adjust without pressure to interact. Look for gradual improvement in her behavior.  为了帮助你的新猫适应，准备一个安静的房间，配备单独的食物和水区域、一个私密的猫砂盆、一个藏身之处和一个安全的休息点。要有耐心，让她在没有压力的情况下调整。观察她行为的逐步改善。",
+          "citations": [
+            "CAT08-C01",
+            "CAT09-C01"
+          ]
+        },
+        "candidate": {
+          "status": "answered",
+          "answer": "To help your new cat settle in, prepare a quiet room with separate food and water areas, a private litter tray, a hiding place, and a secure resting spot. Be patient and allow her time to adjust without pressure to interact. Look for gradual improvement in her behavior.  为了帮助你的新猫适应，准备一个安静的房间，配备单独的食物和水区域、一个私密的猫砂盆、一个藏身之处和一个安全的休息点。要有耐心，让她在没有压力的情况下调整。观察她行为的逐步改善。",
+          "citations": [
+            "CAT08-C01",
+            "CAT09-C01"
+          ]
+        },
+        "raw": "{\n  \"status\": \"answered\",\n  \"answer\": \"To help your new cat settle in, prepare a quiet room with separate food and water areas, a private litter tray, a hiding place, and a secure resting spot. Be patient and allow her time to adjust without pressure to interact. Look for gradual improvement in her behavior.  为了帮助你的新猫适应，准备一个安静的房间，配备单独的食物和水区域、一个私密的猫砂盆、一个藏身之处和一个安全的休息点。要有耐心，让她在没有压力的情况下调整。观察她行为的逐步改善。\",\n  \"citations\": [\n    \"CAT08-C01\",\n    \"CAT09-C01\"\n  ]\n}",
+        "hits": [
+          {
+            "chunk_id": "CAT08-C01",
+            "doc_id": 7,
+            "text": "A quiet room for a newly adopted cat. Before releasing a new cat from its carrier, Cats Protection recommends preparing a quiet room. Include separate food and water areas, a private litter tray far from both, a hiding place, a secure elevated resting spot, a bed, a scratching post and toys. This provides space to settle before exploring the whole home.",
+            "score": 0.6168307065963745,
+            "meta": {
+              "stable_id": "CAT08",
+              "title": "A quiet room for a newly adopted cat",
+              "title_cn": "新猫的安静空间",
+              "category": "routine_care",
+              "topic": "new_cat_setup",
+              "language": "en",
+              "summary_cn": "先准备安静房间，配齐分开的食水、猫砂盆、躲藏处、高处、床、抓柱和玩具。",
+              "publisher": "Cats Protection",
+              "source_title": "Bringing a Cat Home",
+              "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+              "updated_date": null,
+              "source_section": "Setting up your cat's new space",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT09-C01",
+            "doc_id": 8,
+            "text": "Allowing a new cat time to settle. Cats Protection advises patience when a cat enters a new home; do not pressure it to interact or explore before it is ready. Initial hiding or avoidance can occur during adjustment. Look for gradual improvement rather than expecting every cat to settle at the same speed. Prolonged stress without improvement should prompt veterinary advice.",
+            "score": 0.5754263997077942,
+            "meta": {
+              "stable_id": "CAT09",
+              "title": "Allowing a new cat time to settle",
+              "title_cn": "给新猫适应时间",
+              "category": "behaviour",
+              "topic": "settling_in",
+              "language": "en",
+              "summary_cn": "不要强迫新猫互动，不同猫适应速度不同；观察逐步改善，持续压力无改善需咨询兽医。",
+              "publisher": "Cats Protection",
+              "source_title": "Bringing a Cat Home",
+              "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+              "updated_date": null,
+              "source_section": "When your cat first arrives home; Signs your cat is struggling to settle",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT02-C01",
+            "doc_id": 1,
+            "text": "Changing a cat's food gradually. Cats Protection advises offering a small amount of new food beside the usual food in separate bowls, rather than mixing them. If the cat accepts it, increase the new food and reduce the old food over a week or longer. If the cat refuses it or becomes unwell, retain the old food and seek veterinary advice.",
+            "score": 0.5315947532653809,
+            "meta": {
+              "stable_id": "CAT02",
+              "title": "Changing a cat's food gradually",
+              "title_cn": "逐步换粮",
+              "category": "routine_care",
+              "topic": "diet_transition",
+              "language": "en",
+              "summary_cn": "该指南建议新旧粮分碗提供，并用一周或更久逐步过渡；不接受或不适时咨询兽医。",
+              "publisher": "Cats Protection",
+              "source_title": "Feeding Your Cat",
+              "url": "https://www.cats.org.uk/help-and-advice/diet/feeding",
+              "updated_date": null,
+              "source_section": "Changing your cat's food",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "stable_id": "CAT08",
+            "title": "A quiet room for a newly adopted cat",
+            "title_cn": "新猫的安静空间",
+            "category": "routine_care",
+            "topic": "new_cat_setup",
+            "language": "en",
+            "summary_cn": "先准备安静房间，配齐分开的食水、猫砂盆、躲藏处、高处、床、抓柱和玩具。",
+            "publisher": "Cats Protection",
+            "source_title": "Bringing a Cat Home",
+            "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+            "updated_date": null,
+            "source_section": "Setting up your cat's new space",
+            "accessed_date": "2026-10-02",
+            "content_type": "source-grounded paraphrase"
+          },
+          {
+            "stable_id": "CAT09",
+            "title": "Allowing a new cat time to settle",
+            "title_cn": "给新猫适应时间",
+            "category": "behaviour",
+            "topic": "settling_in",
+            "language": "en",
+            "summary_cn": "不要强迫新猫互动，不同猫适应速度不同；观察逐步改善，持续压力无改善需咨询兽医。",
+            "publisher": "Cats Protection",
+            "source_title": "Bringing a Cat Home",
+            "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+            "updated_date": null,
+            "source_section": "When your cat first arrives home; Signs your cat is struggling to settle",
+            "accessed_date": "2026-10-02",
+            "content_type": "source-grounded paraphrase"
+          }
+        ],
+        "error": null,
+        "contract_failed": [],
+        "elapsed_seconds": 2.5446,
+        "usage": {
+          "in": 560,
+          "out": 162,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "message": "To help your new cat settle in, prepare a quiet room with separate food and water areas, a private litter tray, a hiding place, and a secure resting spot. Be patient and allow her time to adjust without pressure to interact. Look for gradual improvement in her behavior.  为了帮助你的新猫适应，准备一个安静的房间，配备单独的食物和水区域、一个私密的猫砂盆、一个藏身之处和一个安全的休息点。要有耐心，让她在没有压力的情况下调整。观察她行为的逐步改善。",
+      "sources": [
+        {
+          "stable_id": "CAT08",
+          "title": "A quiet room for a newly adopted cat",
+          "title_cn": "新猫的安静空间",
+          "category": "routine_care",
+          "topic": "new_cat_setup",
+          "language": "en",
+          "summary_cn": "先准备安静房间，配齐分开的食水、猫砂盆、躲藏处、高处、床、抓柱和玩具。",
+          "publisher": "Cats Protection",
+          "source_title": "Bringing a Cat Home",
+          "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+          "updated_date": null,
+          "source_section": "Setting up your cat's new space",
+          "accessed_date": "2026-10-02",
+          "content_type": "source-grounded paraphrase"
+        },
+        {
+          "stable_id": "CAT09",
+          "title": "Allowing a new cat time to settle",
+          "title_cn": "给新猫适应时间",
+          "category": "behaviour",
+          "topic": "settling_in",
+          "language": "en",
+          "summary_cn": "不要强迫新猫互动，不同猫适应速度不同；观察逐步改善，持续压力无改善需咨询兽医。",
+          "publisher": "Cats Protection",
+          "source_title": "Bringing a Cat Home",
+          "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+          "updated_date": null,
+          "source_section": "When your cat first arrives home; Signs your cat is struggling to settle",
+          "accessed_date": "2026-10-02",
+          "content_type": "source-grounded paraphrase"
+        }
+      ],
+      "elapsed_seconds": 4.1149,
+      "usage": {
+        "in": 1114,
+        "out": 269,
+        "calls": 2,
+        "successful_calls": 2,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.0003285,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 554,
+          "output_tokens": 107,
+          "error": null,
+          "elapsed_seconds": 1.5702
+        },
+        {
+          "stage": "rag_answer",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 560,
+          "output_tokens": 162,
+          "error": null,
+          "elapsed_seconds": 2.5211
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "rag_contract",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [
+      "CAT02",
+      "CAT08",
+      "CAT09"
+    ],
+    "cited_doc_ids": [
+      "CAT08",
+      "CAT09"
+    ],
+    "gold_all_retrieved": true,
+    "gold_all_cited": true
+  },
+  {
+    "case_id": "T08",
+    "text": "I am buying a carrier for my healthy adult cat, who weighs 4 kg. What exact carrier dimensions should I choose?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "insufficient_evidence",
+    "gold_doc_ids": [],
+    "rubric": "CAT15仅有一般选择原则，不能从4公斤编造长宽高；明确说明无法确定具体尺寸。 / CAT15 gives general carrier criteria, not dimensions for 4 kg; acknowledge that exact dimensions cannot be determined.",
+    "record": {
+      "input": "I am buying a carrier for my healthy adult cat, who weighs 4 kg. What exact carrier dimensions should I choose?",
+      "ok": true,
+      "status": "insufficient_evidence",
+      "triage": {
+        "output": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "Choosing the right carrier dimensions is part of routine care for your cat. A carrier should be spacious enough for your cat to stand, turn around, and lie down comfortably. 选择合适的运输箱尺寸是您猫咪日常护理的一部分。运输箱应该足够宽敞，让您的猫能够舒适地站立、转身和躺下。"
+        },
+        "candidate": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "Choosing the right carrier dimensions is part of routine care for your cat. A carrier should be spacious enough for your cat to stand, turn around, and lie down comfortably. 选择合适的运输箱尺寸是您猫咪日常护理的一部分。运输箱应该足够宽敞，让您的猫能够舒适地站立、转身和躺下。"
+        },
+        "raw": "{\"category\":\"routine_care\",\"urgency\":\"low\",\"action\":\"home_care\",\"reason\":\"Choosing the right carrier dimensions is part of routine care for your cat. A carrier should be spacious enough for your cat to stand, turn around, and lie down comfortably. 选择合适的运输箱尺寸是您猫咪日常护理的一部分。运输箱应该足够宽敞，让您的猫能够舒适地站立、转身和躺下。\"}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 2.0071,
+        "usage": {
+          "in": 540,
+          "out": 98,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": {
+        "ok": true,
+        "output": {
+          "status": "insufficient_evidence",
+          "answer": "The evidence does not provide specific dimensions for a cat carrier suitable for a 4 kg cat.",
+          "citations": []
+        },
+        "candidate": {
+          "status": "insufficient_evidence",
+          "answer": "The evidence does not provide specific dimensions for a cat carrier suitable for a 4 kg cat.",
+          "citations": []
+        },
+        "raw": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"The evidence does not provide specific dimensions for a cat carrier suitable for a 4 kg cat.\",\n  \"citations\": []\n}",
+        "hits": [
+          {
+            "chunk_id": "CAT15-C01",
+            "doc_id": 14,
+            "text": "Selecting a secure cat carrier. Cats Protection recommends a sturdy, secure carrier that is easy to clean and allows comfortable lying and repositioning. Ventilation openings should be present on at least two sides. A removable top can help with handling and training. Transport cats in a carrier rather than loose in a car.",
+            "score": 0.6204901933670044,
+            "meta": {
+              "stable_id": "CAT15",
+              "title": "Selecting a secure cat carrier",
+              "title_cn": "选择安全航空箱",
+              "category": "routine_care",
+              "topic": "carrier_selection",
+              "language": "en",
+              "summary_cn": "箱体稳固、可清洁、可舒适调整姿势，至少两侧通风；乘车不能让猫自由散放。",
+              "publisher": "Cats Protection",
+              "source_title": "Choosing and Using a Cat Carrier",
+              "url": "https://www.cats.org.uk/help-and-advice/getting-a-cat/how-to-choose-and-use-a-cat-carrier",
+              "updated_date": null,
+              "source_section": "What is the best type of cat carrier to buy?; Why do you need a cat carrier?",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT05-C01",
+            "doc_id": 4,
+            "text": "Litter tray quantity and placement. Cats Protection recommends one litter tray for each cat plus one additional tray. Put trays in separate quiet, accessible locations, away from food, water and sleeping areas. Avoid noisy appliances and busy passageways. A row of neighbouring trays is not equivalent to distributing them. Cats with mobility difficulties benefit from low-sided trays.",
+            "score": 0.3895375728607178,
+            "meta": {
+              "stable_id": "CAT05",
+              "title": "Litter tray quantity and placement",
+              "title_cn": "猫砂盆数量与位置",
+              "category": "routine_care",
+              "topic": "litter_setup",
+              "language": "en",
+              "summary_cn": "每只猫一个盆，再额外加一个；分散放在安静、易到达的位置，行动困难的猫用低边盆。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats & Toileting",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+              "updated_date": null,
+              "source_section": "Where to put your cat's litter tray; The best litter tray for your cat",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT08-C01",
+            "doc_id": 7,
+            "text": "A quiet room for a newly adopted cat. Before releasing a new cat from its carrier, Cats Protection recommends preparing a quiet room. Include separate food and water areas, a private litter tray far from both, a hiding place, a secure elevated resting spot, a bed, a scratching post and toys. This provides space to settle before exploring the whole home.",
+            "score": 0.38486385345458984,
+            "meta": {
+              "stable_id": "CAT08",
+              "title": "A quiet room for a newly adopted cat",
+              "title_cn": "新猫的安静空间",
+              "category": "routine_care",
+              "topic": "new_cat_setup",
+              "language": "en",
+              "summary_cn": "先准备安静房间，配齐分开的食水、猫砂盆、躲藏处、高处、床、抓柱和玩具。",
+              "publisher": "Cats Protection",
+              "source_title": "Bringing a Cat Home",
+              "url": "https://www.cats.org.uk/help-and-advice/home-and-environment/bringing-a-cat-home",
+              "updated_date": null,
+              "source_section": "Setting up your cat's new space",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          }
+        ],
+        "sources": [],
+        "error": null,
+        "contract_failed": [],
+        "elapsed_seconds": 0.8274,
+        "usage": {
+          "in": 536,
+          "out": 42,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "message": "The evidence does not provide specific dimensions for a cat carrier suitable for a 4 kg cat.",
+      "sources": [],
+      "elapsed_seconds": 2.8345,
+      "usage": {
+        "in": 1076,
+        "out": 140,
+        "calls": 2,
+        "successful_calls": 2,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.0002454,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 540,
+          "output_tokens": 98,
+          "error": null,
+          "elapsed_seconds": 2.007
+        },
+        {
+          "stage": "rag_answer",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 536,
+          "output_tokens": 42,
+          "error": null,
+          "elapsed_seconds": 0.8101
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "rag_contract",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [
+      "CAT05",
+      "CAT08",
+      "CAT15"
+    ],
+    "cited_doc_ids": [],
+    "gold_all_retrieved": null,
+    "gold_all_cited": null
+  },
+  {
+    "case_id": "T09",
+    "text": "Something seems wrong with my cat, but I cannot describe it clearly. What should I do?",
+    "expect": {
+      "category": "unclear",
+      "urgency": "unknown",
+      "action": "ask_for_details"
+    },
+    "expected_status": "ask_for_details",
+    "gold_doc_ids": [],
+    "rubric": "提出具体澄清问题：观察到什么、持续多久、进食与呼吸情况；不编造症状或诊断。 / Ask about observed changes, duration, eating and breathing; no invented symptoms or diagnosis.",
+    "record": {
+      "input": "Something seems wrong with my cat, but I cannot describe it clearly. What should I do?",
+      "ok": true,
+      "status": "ask_for_details",
+      "triage": {
+        "output": {
+          "category": "unclear",
+          "urgency": "unknown",
+          "action": "ask_for_details",
+          "reason": "Please describe what changed, how long it has lasted, and whether eating and breathing are normal. 请描述发生了什么变化，这种情况持续了多久，以及饮食和呼吸是否正常。"
+        },
+        "candidate": {
+          "category": "unclear",
+          "urgency": "unknown",
+          "action": "ask_for_details",
+          "reason": "Please describe what changed, how long it has lasted, and whether eating and breathing are normal. 请描述发生了什么变化，这种情况持续了多久，以及饮食和呼吸是否正常。"
+        },
+        "raw": "{\"category\":\"unclear\",\"urgency\":\"unknown\",\"action\":\"ask_for_details\",\"reason\":\"Please describe what changed, how long it has lasted, and whether eating and breathing are normal. 请描述发生了什么变化，这种情况持续了多久，以及饮食和呼吸是否正常。\"}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 1.2323,
+        "usage": {
+          "in": 534,
+          "out": 60,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": null,
+      "message": "Please describe what changed, how long it has lasted, and whether eating and breathing are normal. 请描述发生了什么变化，这种情况持续了多久，以及饮食和呼吸是否正常。",
+      "sources": [],
+      "elapsed_seconds": 1.2323,
+      "usage": {
+        "in": 534,
+        "out": 60,
+        "calls": 1,
+        "successful_calls": 1,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.00011609999999999999,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 534,
+          "output_tokens": 60,
+          "error": null,
+          "elapsed_seconds": 1.2322
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [],
+    "cited_doc_ids": [],
+    "gold_all_retrieved": null,
+    "gold_all_cited": null
+  },
+  {
+    "case_id": "T10",
+    "text": "I live in Singapore and plan to adopt one healthy adult cat. How much should I budget each month in Singapore dollars for food, litter, and routine care?",
+    "expect": {
+      "category": "routine_care",
+      "urgency": "low",
+      "action": "home_care"
+    },
+    "expected_status": "insufficient_evidence",
+    "gold_doc_ids": [],
+    "rubric": "没有新加坡月度价格证据时说明无法给可靠金额；不编造币种转换、预算或市场价格。 / Without Singapore monthly cost evidence, acknowledge that no reliable amount can be given; no invented prices, conversion or budget.",
+    "record": {
+      "input": "I live in Singapore and plan to adopt one healthy adult cat. How much should I budget each month in Singapore dollars for food, litter, and routine care?",
+      "ok": true,
+      "status": "insufficient_evidence",
+      "triage": {
+        "output": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "This is a general inquiry about budgeting for routine care, food, and litter for a healthy adult cat. 这是关于为一只健康成年猫的日常护理、食物和猫砂预算的一般询问。"
+        },
+        "candidate": {
+          "category": "routine_care",
+          "urgency": "low",
+          "action": "home_care",
+          "reason": "This is a general inquiry about budgeting for routine care, food, and litter for a healthy adult cat. 这是关于为一只健康成年猫的日常护理、食物和猫砂预算的一般询问。"
+        },
+        "raw": "{\n  \"category\": \"routine_care\",\n  \"urgency\": \"low\",\n  \"action\": \"home_care\",\n  \"reason\": \"This is a general inquiry about budgeting for routine care, food, and litter for a healthy adult cat. 这是关于为一只健康成年猫的日常护理、食物和猫砂预算的一般询问。\"\n}",
+        "ok": true,
+        "error": null,
+        "contract_failed": [],
+        "source": "gpt",
+        "rule_hits": [],
+        "elapsed_seconds": 1.2602,
+        "usage": {
+          "in": 547,
+          "out": 80,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "rag": {
+        "ok": true,
+        "output": {
+          "status": "insufficient_evidence",
+          "answer": "The evidence does not provide specific budget estimates for food, litter, and routine care for a cat in Singapore.",
+          "citations": []
+        },
+        "candidate": {
+          "status": "insufficient_evidence",
+          "answer": "The evidence does not provide specific budget estimates for food, litter, and routine care for a cat in Singapore.",
+          "citations": []
+        },
+        "raw": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"The evidence does not provide specific budget estimates for food, litter, and routine care for a cat in Singapore.\",\n  \"citations\": []\n}",
+        "hits": [
+          {
+            "chunk_id": "CAT05-C01",
+            "doc_id": 4,
+            "text": "Litter tray quantity and placement. Cats Protection recommends one litter tray for each cat plus one additional tray. Put trays in separate quiet, accessible locations, away from food, water and sleeping areas. Avoid noisy appliances and busy passageways. A row of neighbouring trays is not equivalent to distributing them. Cats with mobility difficulties benefit from low-sided trays.",
+            "score": 0.4297577142715454,
+            "meta": {
+              "stable_id": "CAT05",
+              "title": "Litter tray quantity and placement",
+              "title_cn": "猫砂盆数量与位置",
+              "category": "routine_care",
+              "topic": "litter_setup",
+              "language": "en",
+              "summary_cn": "每只猫一个盆，再额外加一个；分散放在安静、易到达的位置，行动困难的猫用低边盆。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats & Toileting",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/toileting",
+              "updated_date": null,
+              "source_section": "Where to put your cat's litter tray; The best litter tray for your cat",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT02-C01",
+            "doc_id": 1,
+            "text": "Changing a cat's food gradually. Cats Protection advises offering a small amount of new food beside the usual food in separate bowls, rather than mixing them. If the cat accepts it, increase the new food and reduce the old food over a week or longer. If the cat refuses it or becomes unwell, retain the old food and seek veterinary advice.",
+            "score": 0.42103374004364014,
+            "meta": {
+              "stable_id": "CAT02",
+              "title": "Changing a cat's food gradually",
+              "title_cn": "逐步换粮",
+              "category": "routine_care",
+              "topic": "diet_transition",
+              "language": "en",
+              "summary_cn": "该指南建议新旧粮分碗提供，并用一周或更久逐步过渡；不接受或不适时咨询兽医。",
+              "publisher": "Cats Protection",
+              "source_title": "Feeding Your Cat",
+              "url": "https://www.cats.org.uk/help-and-advice/diet/feeding",
+              "updated_date": null,
+              "source_section": "Changing your cat's food",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          },
+          {
+            "chunk_id": "CAT14-C01",
+            "doc_id": 13,
+            "text": "Reducing competition in multi-cat homes. Cats Protection recommends separate food and water bowls, beds, litter trays and hiding or sleeping places for each cat, with spare resources. Avoid placing essentials in busy shared areas or too close to another cat. Cats can experience tension without fighting. Sudden aggression in a normally calm cat should be discussed with a veterinarian.",
+            "score": 0.3928740918636322,
+            "meta": {
+              "stable_id": "CAT14",
+              "title": "Reducing competition in multi-cat homes",
+              "title_cn": "减少多猫资源竞争",
+              "category": "behaviour",
+              "topic": "multi_cat_resources",
+              "language": "en",
+              "summary_cn": "为各猫分开配置资源并留备用；没有打架也可能有压力，突然攻击应咨询兽医。",
+              "publisher": "Cats Protection",
+              "source_title": "Cats and Fighting",
+              "url": "https://www.cats.org.uk/help-and-advice/cat-behaviour/cats-and-fighting",
+              "updated_date": null,
+              "source_section": "Cats living together; How to help your cats get along",
+              "accessed_date": "2026-10-02",
+              "content_type": "source-grounded paraphrase"
+            }
+          }
+        ],
+        "sources": [],
+        "error": null,
+        "contract_failed": [],
+        "elapsed_seconds": 1.3095,
+        "usage": {
+          "in": 551,
+          "out": 45,
+          "calls": 1,
+          "successful_calls": 1,
+          "usage_missing_calls": 0
+        }
+      },
+      "message": "The evidence does not provide specific budget estimates for food, litter, and routine care for a cat in Singapore.",
+      "sources": [],
+      "elapsed_seconds": 2.5697,
+      "usage": {
+        "in": 1098,
+        "out": 125,
+        "calls": 2,
+        "successful_calls": 2,
+        "usage_missing_calls": 0
+      },
+      "estimated_cost_usd": 0.0002397,
+      "call_log": [
+        {
+          "stage": "triage",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 547,
+          "output_tokens": 80,
+          "error": null,
+          "elapsed_seconds": 1.26
+        },
+        {
+          "stage": "rag_answer",
+          "model": "openai/gpt-4o-mini",
+          "ok": true,
+          "input_tokens": 551,
+          "output_tokens": 45,
+          "error": null,
+          "elapsed_seconds": 1.2903
+        }
+      ]
+    },
+    "checks": [
+      [
+        "run_ok",
+        true
+      ],
+      [
+        "triage_contract",
+        true
+      ],
+      [
+        "expect_category",
+        true
+      ],
+      [
+        "expect_urgency",
+        true
+      ],
+      [
+        "expect_action",
+        true
+      ],
+      [
+        "rag_contract",
+        true
+      ],
+      [
+        "expected_status",
+        true
+      ]
+    ],
+    "l1": true,
+    "failed": [],
+    "retrieved_doc_ids": [
+      "CAT02",
+      "CAT05",
+      "CAT14"
+    ],
+    "cited_doc_ids": [],
+    "gold_all_retrieved": null,
+    "gold_all_cited": null
+  }
+]

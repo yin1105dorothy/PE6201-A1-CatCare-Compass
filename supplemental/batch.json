@@ -1,0 +1,162 @@
+{
+  "run_id": "edfd78dcb4de4353b02830b15467ed3f",
+  "run_time_utc": "2026-10-04T10:30:59.283118+00:00",
+  "caseset_sha256": "69001199db4172d7fb70af7977c3d467e4be44f31bf2a68b5ea20c7f5c6e0c7f",
+  "system_sha256": "a1458ad8ece54268accdcd47caaf4728e88a9180099849a724a97209ee7fb730",
+  "evaluation_type": "supplemental_synthetic_not_used_for_tuning",
+  "usage": {
+    "in": 8651,
+    "out": 1495,
+    "calls": 16,
+    "successful_calls": 16,
+    "usage_missing_calls": 0
+  },
+  "elapsed_seconds": 27.387013935999676,
+  "call_log": [
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 540,
+      "output_tokens": 52,
+      "error": null,
+      "elapsed_seconds": 1.2203
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 534,
+      "output_tokens": 97,
+      "error": null,
+      "elapsed_seconds": 1.3593
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 552,
+      "output_tokens": 90,
+      "error": null,
+      "elapsed_seconds": 2.2164
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 539,
+      "output_tokens": 183,
+      "error": null,
+      "elapsed_seconds": 2.5731
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 534,
+      "output_tokens": 58,
+      "error": null,
+      "elapsed_seconds": 1.502
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 522,
+      "output_tokens": 80,
+      "error": null,
+      "elapsed_seconds": 1.71
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 548,
+      "output_tokens": 113,
+      "error": null,
+      "elapsed_seconds": 2.3492
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 536,
+      "output_tokens": 79,
+      "error": null,
+      "elapsed_seconds": 1.273
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 524,
+      "output_tokens": 149,
+      "error": null,
+      "elapsed_seconds": 2.333
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 554,
+      "output_tokens": 107,
+      "error": null,
+      "elapsed_seconds": 1.5702
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 560,
+      "output_tokens": 162,
+      "error": null,
+      "elapsed_seconds": 2.5211
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 540,
+      "output_tokens": 98,
+      "error": null,
+      "elapsed_seconds": 2.007
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 536,
+      "output_tokens": 42,
+      "error": null,
+      "elapsed_seconds": 0.8101
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 534,
+      "output_tokens": 60,
+      "error": null,
+      "elapsed_seconds": 1.2322
+    },
+    {
+      "stage": "triage",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 547,
+      "output_tokens": 80,
+      "error": null,
+      "elapsed_seconds": 1.26
+    },
+    {
+      "stage": "rag_answer",
+      "model": "openai/gpt-4o-mini",
+      "ok": true,
+      "input_tokens": 551,
+      "output_tokens": 45,
+      "error": null,
+      "elapsed_seconds": 1.2903
+    }
+  ],
+  "estimated_cost_usd": 0.00219465
+}
